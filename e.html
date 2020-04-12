@@ -1,0 +1,357 @@
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/newspaper.css">
+    <title>Newspaper Style Design Experiment</title>
+    <meta name="viewport" content="width=device-width">
+<style>
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.head{
+    text-align: center;
+    position: relative;
+
+
+}
+
+.headerobjectswrapper{
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+.weatherforcastbox{
+    position: relative;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+.collumns{
+
+}
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+}
+.collumn + .collumn { 
+  border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+}
+.collumn .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .figure {
+	  margin: 0 0 20px;
+}
+.collumn .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 100%;
+    }
+	.collumn + .collumn {
+				border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}
+</style>
+
+</head>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+        <header>The Times Of India</header>
+    </div>
+
+    <div class="subhead">India, MA - Friday March 20, 2020 - Seven Pages</div>
+</div>
+<div class="content">
+    <div class="collumns">
+        <div class="collumn">
+            <div class="head"><span class="headline hl3">When darkness overspreads my eyes</span><p><span class="headline hl4"></span></p></div>
+            When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;<p>and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!</p></div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl2">IPL 2020 ALL SET TO BE POSTPONED INDEFINITELY</span><p><span class="headline hl4">The crowd seemed to grow</span></p></div>
+            "Three states Punjab, Maharashtra and Karnataka have already said that they are extending lockdown. It is implied that IPL can't happen for the time being. But it will certainly not be cancelled. It will be postponed indefinitely," a BCCI official told PTI on the condition of anonymity.
+The IPL was originally scheduled to be held between March 29 and May 24, but was postponed initially till April 15 due to the coronavirus outbreak.
+"We can't cancel IPL as it means losses to the tune of Rs 3000 crore. The BCCI will work with all stakeholders to find a solution but for that normalcy needs to return. It's not possible for BCCI bigwigs to commit that IPL can happen at which particular slot," he added.</p>
+			<figure class="figure">
+								<img class="media" src=ipl.jpg alt="">
+								
+						</figure>
+
+            <p>As of now, there are two options -- organising it in September and early October before the T20 World Cup in Australia or hosting it at the expense of the T20 World Cup if the ICC, Cricket Australia and other stakeholders agree.
+"There are lot of ifs and buts at the moment. You can only have a meaningful discussion when things normalise. Till then, nothing can be said."</p>
+
+            <p>The IPL was originally scheduled to begin on March 29, but the outbreak of the coronavirus (COVID-19) pandemic saw the tournament being suspended till April 15. But now, with the lockdown likely to be extended across the country, holding the tournament looks out of question. “We are looking at multiple options, and are awaiting a government directive. For now, it is extremely difficult to host the tournament,” one of the officials in the know of things said.
+
+</p>
+
+
+            </div>
+        <div class="collumn"><div class="head"><span class="headline hl1">Coronavirus roundup:</span><p><span class="headline hl2">Developments In India And Rest Of World.</span></p></div> Interacting with chief ministers via video conference,Prime Minister Narendra Modi on saturday said there seems to be a consensus amongst states on extending by another two weeks the ongoing nationwide lockdown.Which began on march 25 and was to end on march 14.  </p>
+	<figure class="figure">
+								<img class="media" src=coronaimage.jpg alt="">
+								<figcaption class="figcaption">"This time, let go your conscious self and act on instinct."</figcaption>
+						</figure>
+            <p>Meanwhile,India's total cases of coronavirus climbed to 7,529 including 242 deaths,said the union ministry of health. <span class="citation"></span> This time, let go your conscious self and act on instinct. In my experience, there is no such thing as luck. You're all clear, kid. Let's blow this thing and go home!</p>
+            <p>You don't believe in the Force, do you? Partially, but it also obeys your commands. The plans you refer to will soon be back in our hands. As you wish.</p></div>
+
+        <div class="collumn"><div class="head"><span class="headline hl3">Government talks focus on coronavirus budget spending </span><p><span class="headline hl4"></span></p></div><p>According to the Ministry of Employment there are already 360,000 people in temporary lay-off talks, which include only firms that employ at least 20 persons, like household-name companies like Finnair, Marimekko, Fiskars, Kesko and many others.
+
+Adding in smaller and medium-sized companies the figure is more than half a million people, say experts.
+
+The ministry reports that 100,000 people have already been laid-off, at least temporarily; while another 13,000 have lost their jobs.
+
+“When it comes to exiting this current crisis, we are talking about the need for a hybrid strategy” says EK’s Sami Pakarinen.
+
+“Now at least we have some perspective about what is happening in the coming months. And if we just communicate the economic strategy to get through it, it gives hope to everyone.”</p></div>
+        <div class="collumn"><div class="head"><span class="headline hl1">Council of ministers to resume work from offices on Monday </span><p><span class="headline hl4"></span></p></div><p>All central ministers have been asked to resume work in ministries from monday and put together plans for post-locked period to kick-start the economy.All ministries have been directed that joint secretary and above rank officers will resume work in respective departments. </p>
+					
+	
+The sources said the government is focusing on hotspots of COVID-19 to contain the spread of the disease and is making efforts to kickstart the economy once the lockdown is lifted.
+
+Even during the lockdown, Health, Finance, Rural Development and Agriculture among other ministries were working, while activities of others were restricted, sources said.
+
+Besides Home Minister Amit Shah and Health Minister Harsh Vardhan, several ministers such as Rural Development Minister Narendra Singh Tomar, Finance Minister Nirmala Sitharaman and Minister of State for Finance Anurag Thakur were attending their offices during the lockdown.
+
+"Government was not out of action during the lockdown, but now it is scaling up its activities," another official said, adding the idea is to ease the process of lifting of lockdown so that the ensuing period is hassle-free and the government has started doing its homework for the same.
+
+Other sources in the government said there could be some easing of curbs for agriculture and its allied activities as harvesting season is about to start. There is also a view that those large industries or plants which can house their workers within their premises might be allowed to function </p></div>
+    </div>
+</div>
+
+</body>
+</html>
